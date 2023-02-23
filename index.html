@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" type="text/css" href="./src/style.css">
+</head>
+
+<body>
+    <header id="header"></header>
+
+    <main>
+        <div>
+            <div class="title">
+                <button id="backMonth">&#60;</button>
+                <h1 id="title"></h1>
+                <button id="nextMonth">&#62;</button>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                        <th>Sun</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tbody"></tbody>
+            </table>
+        </div>
+
+        <div id="list"></div>
+    </main>
+
+    <script src="./src/index.js" type="module"></script>
+</body>
+
+</html>
