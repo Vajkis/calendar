@@ -17,13 +17,19 @@ header {
 
 .container {
     display: flex;
-    width: 219px;
+    min-width: 219px;
+}
+
+@media (max-width: 767px) {
+    header {
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 1023px) {
     header {
         justify-content: space-between;
-        gap: 0;
+        gap: 10px;
     }
 
     .container {
@@ -154,20 +160,31 @@ input {
 
     background-color: #89CFF0;
 
-    width: 6px;
-    height: 6px;
+    width: 5px;
+    height: 5px;
     border-radius: 50%;
+}
+
+@media (min-width: 500px) {
+    .bubble {
+        width: 6px;
+        height: 6px;
+    }
 }
 
 .today>.bubble {
     background-color: #fff;
 }
 
+h2 {
+    max-width: 400px;
+}
+
 ol {
     display: flex;
     flex-direction: column;
     padding: 0;
-    width: 328px;
+    width: 400px;
     gap: 5px;
 }
 
